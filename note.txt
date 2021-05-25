@@ -1,0 +1,4 @@
+- Điều chỉnh left-sidebar: @jumbo\components\AppLayout\partials\SideBar\index.js
+- Định nghĩa các multi language: i18n\locales\en_US.json
+- Cài đặc ngôn ngữ: @jumbo\components\contextProvider\AppContextProvider\defaultContext.js
+- Sửa font: @jumbo\constants\ThemeOptions.js

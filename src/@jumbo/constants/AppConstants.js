@@ -1,5 +1,5 @@
-export const AppHeaderHeight = 72;
-export const AppHeaderHeightSm = 64;
+export const AppHeaderHeight = 50;
+export const AppHeaderHeightSm = 50;
 export const AppFooterHeight = 72;
 export const AppFooterHeightSm = 64;
 export const AppMainContentPadding = 60;
@@ -14,11 +14,11 @@ export const TaskDetailAddCommentHeight = 72;
 export const ChatSidebarHeaderHeight = 124;
 export const ChatSidebarTabContainerHeight = 49;
 export const ChatFooterHeight = 70;
-export const CurrentAuthMethod = 'basic'; //jwtAuth,firebase,basic
+export const CurrentAuthMethod = "basic"; //jwtAuth,firebase,basic
 
 export const getAppSidebarHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
+    case "xs":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -26,7 +26,7 @@ export const getAppSidebarHeight = (width, visibleAppFooter) => {
         InBuildAppSidebarHeaderHeight +
         (visibleAppFooter ? AppFooterHeightSm : 0)
       );
-    case 'sm':
+    case "sm":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -47,7 +47,7 @@ export const getAppSidebarHeight = (width, visibleAppFooter) => {
 
 export const getMailContainerHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
+    case "xs":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -55,7 +55,7 @@ export const getMailContainerHeight = (width, visibleAppFooter) => {
         MailAppContentHeaderHeight +
         (visibleAppFooter ? AppFooterHeightSm : 0)
       );
-    case 'sm':
+    case "sm":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -76,40 +76,85 @@ export const getMailContainerHeight = (width, visibleAppFooter) => {
 
 export const getContactContainerHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
-    case 'sm':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
+    case "xs":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
+    case "sm":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
     default:
-      return AppHeaderHeight + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeight : 0);
+      return (
+        AppHeaderHeight +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeight : 0)
+      );
   }
 };
 
 export const getTaskListSidebarHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
-    case 'sm':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
+    case "xs":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
+    case "sm":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
     default:
-      return AppHeaderHeight + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeight : 0);
+      return (
+        AppHeaderHeight +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeight : 0)
+      );
   }
 };
 
 export const getTaskListContainerHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
-    case 'sm':
-      return AppHeaderHeightSm + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeightSm : 0);
+    case "xs":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
+    case "sm":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
     default:
-      return AppHeaderHeight + AppMainContentPadding + InBuildAppHeaderHeight + (visibleAppFooter ? AppFooterHeight : 0);
+      return (
+        AppHeaderHeight +
+        AppMainContentPadding +
+        InBuildAppHeaderHeight +
+        (visibleAppFooter ? AppFooterHeight : 0)
+      );
   }
 };
 
 export const getTaskDetailContainerHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
+    case "xs":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -117,7 +162,7 @@ export const getTaskDetailContainerHeight = (width, visibleAppFooter) => {
         TaskDetailAddCommentHeight +
         (visibleAppFooter ? AppFooterHeightSm : 0)
       );
-    case 'sm':
+    case "sm":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -138,7 +183,7 @@ export const getTaskDetailContainerHeight = (width, visibleAppFooter) => {
 
 export const getChatSidebarHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
+    case "xs":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -146,7 +191,7 @@ export const getChatSidebarHeight = (width, visibleAppFooter) => {
         ChatSidebarTabContainerHeight +
         (visibleAppFooter ? AppFooterHeightSm : 0)
       );
-    case 'sm':
+    case "sm":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -167,7 +212,7 @@ export const getChatSidebarHeight = (width, visibleAppFooter) => {
 
 export const getChatContainerHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
+    case "xs":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -175,7 +220,7 @@ export const getChatContainerHeight = (width, visibleAppFooter) => {
         ChatFooterHeight +
         (visibleAppFooter ? AppFooterHeightSm : 0)
       );
-    case 'sm':
+    case "sm":
       return (
         AppHeaderHeightSm +
         AppMainContentPadding +
@@ -196,11 +241,23 @@ export const getChatContainerHeight = (width, visibleAppFooter) => {
 
 export const getWallHeight = (width, visibleAppFooter) => {
   switch (width) {
-    case 'xs':
-      return AppHeaderHeightSm + AppMainContentPadding + (visibleAppFooter ? AppFooterHeightSm : 0);
-    case 'sm':
-      return AppHeaderHeightSm + AppMainContentPadding + (visibleAppFooter ? AppFooterHeightSm : 0);
+    case "xs":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
+    case "sm":
+      return (
+        AppHeaderHeightSm +
+        AppMainContentPadding +
+        (visibleAppFooter ? AppFooterHeightSm : 0)
+      );
     default:
-      return AppHeaderHeight + AppMainContentPadding + (visibleAppFooter ? AppFooterHeight : 0);
+      return (
+        AppHeaderHeight +
+        AppMainContentPadding +
+        (visibleAppFooter ? AppFooterHeight : 0)
+      );
   }
 };

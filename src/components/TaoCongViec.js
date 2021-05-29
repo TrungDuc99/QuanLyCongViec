@@ -105,7 +105,6 @@ const TaoCvPhong = () => {
     setState({ ...state, description: newContent });
   };
   const handleSubmit = (e) => {
-    
     // your submit logic
     console.log(e);
     setSubmited(true);
@@ -126,7 +125,7 @@ const TaoCvPhong = () => {
     <div className={classes.root}>
       <Grid container spacing={1}>
         <Grid item xs={8}>
-          <h2>Tên công việc</h2>
+          <h3>Tên công việc</h3>
           <Paper>
             <FormControl
               fullWidth
@@ -151,7 +150,7 @@ const TaoCvPhong = () => {
         <Grid item xs={6}></Grid>
         <Grid item xs={8}>
           <FormControl fullWidth className={classes.margin} variant="outlined">
-            <h2>Mô tả công việc</h2>
+            <h3>Mô tả công việc</h3>
             <Paper className={classes.paper}>
               <CKEditor
                 activeClass="p10"
@@ -170,7 +169,7 @@ const TaoCvPhong = () => {
 
         <Grid item xs={8}>
           <FormControl fullWidth className={classes.margin} variant="outlined">
-            <h2>Ghi chú công việc</h2>
+            <h3>Ghi chú công việc</h3>
 
             <TextareaAutosize
               rowsMin={4}
@@ -184,7 +183,7 @@ const TaoCvPhong = () => {
         <Grid item xs={6}></Grid>
 
         <Grid item xs={8}>
-          <h2>Nhân sự thực hiện</h2>
+          <h3>Nhân sự thực hiện</h3>
           <Paper>
             <FormControl
               fullWidth
@@ -229,7 +228,7 @@ const TaoCvPhong = () => {
         <Grid item xs={6}></Grid>
 
         <Grid item xs={8}>
-          <h2>Ngày Thực hiện</h2>{" "}
+          <h3>Ngày Thực hiện</h3>{" "}
           <Paper>
             <FormControl
               fullWidth

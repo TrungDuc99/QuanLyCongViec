@@ -140,7 +140,7 @@ const EnhancedTableToolbar = (props) => {
               </StyledBadge>
             </div>
           </Grid>
-          
+
           <Grid item>
             <div
               className={classes.tab}
@@ -195,6 +195,72 @@ const useRowStyles = makeStyles({
     },
   },
 });
+const rows = [
+  createData(
+    "Test1",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test2",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test3",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test4",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test5",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test6",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+  createData(
+    "Test7",
+    "Phòng PTUD",
+    "Lê Anh Toàn",
+    "leanhtoan@vietbank.com.vn",
+    "19/05/2021",
+    3.99
+  ),
+];
 
 function createData(namecv, nameroom, nameTp, mailTp, ngaytao) {
   return {
@@ -285,7 +351,9 @@ function Row(props) {
           >
             <MenuItem onClick={sweetAlerts}>Tu choi</MenuItem>
             <MenuItem
-              onClick={() => history.push(`/phong/CongViec-BTGD/xem-cv/${row.namecv}`)}
+              onClick={() =>
+                history.push(`/phong/CongViec-BTGD/xem-cv/${row.namecv}`)
+              }
             >
               xem
             </MenuItem>
@@ -347,73 +415,6 @@ Row.propTypes = {
     protein: PropTypes.number.isRequired,
   }).isRequired,
 };
-
-const rows = [
-  createData(
-    "Test1",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test2",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test3",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test4",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test5",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test6",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-  createData(
-    "Test7",
-    "Phòng PTUD",
-    "Lê Anh Toàn",
-    "leanhtoan@vietbank.com.vn",
-    "19/05/2021",
-    3.99
-  ),
-];
 
 const useStyles = makeStyles((theme) => ({
   root: {

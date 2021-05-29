@@ -17,7 +17,7 @@ export default {
     name: "VietNam",
     icon: "vi",
   },
-  layout: LAYOUT_TYPES.VERTICAL_DEFAULT,
+  layout: LAYOUT_TYPES.VERTICAL_MINIMAL,
   layoutType: LAYOUT_STYLES.FULL_WIDTH,
   themeType: THEME_TYPES.LIGHT,
   drawerBreakPoint: DRAWER_BREAK_POINT.MD,
